@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=Poppins:wght@100&family=Roboto+Condensed:wght@300&family=Roboto:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(fundo-velho-da-textura.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.start {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #ffffff3b;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    padding: 8px 20px;
+}
+
+.image1 {
+    height: 80px;
+
+}
+
+.mundo {
+    color: #09080c;
+    font-size: 20px;
+
+}
+
+.texto {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000dc;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.image-form {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: max-content;
+    padding: 20px;
+}
+
+.grupo {
+    color: #707091;
+    font-size: 40px;
+
+}
+
+.image-form img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+main .fundo {
+    flex: 1;
+    padding: 20px;
+}
+
+.main-footer {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffffc8;
+    padding-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:20px;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.main-footer p {
+    margin: 0;
+}
+
+.logo1 {
+    height: 100px;
+}
+
+.image-footer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: end;
+}
+
+.main-footer .image-footer img {
+    width: 30px;
+    height: 30px;
+}
+
+.main-footer .image-footer img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+/* Novas Linhas */
+
+.card-item {
+    background-color: transparent;
+    perspective: 1000px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    height: 100%;
+}
+
+.cardEfeito .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-back {
+    position: absolute;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    height: 100%;
+    top: 0;
+    padding: 10px;
+    word-break: break-all;
+    overflow: auto;
+}
+
+.card-front {
+    border: 6px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.card-back {
+    background-color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+.card-back img {
+    object-fit: none;
+    aspect-ratio: unset;
+}
+
+.image-container .card-back .descricao {
+    font-family: 'Sacramento', cursive;
+    color: #002e8b;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1050px) {
+    .image-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-footer {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1600px) {
+    .image-form {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

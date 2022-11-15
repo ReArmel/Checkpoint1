@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Travel & Memories </title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon"
+        href="https://st2.depositphotos.com/1112188/6090/v/450/depositphotos_60907731-stock-illustration-hi-detail-black-vector-political.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <header class="start">
+        <img class="image1" src="travel-capa.svg" alt="globo">
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Novo</button>
+    </header>
+    <main>
+        <section class="fundo">
+            <h2 class="texto"> Eternize os seus lugares favoritos no mundo: </h2>
+            <div class="d-flex align-items-center ">
+
+            </div>
+            <div class="image-container">
+                <section class="image-form">
+
+
+                </section>
+            </div>
+        </section>
+        <footer class="main-footer" id="contato">
+            <img class="logo1" src="logo-final.svg">
+            <div>
+                <p> Desenvolvedores: </p>
+                <p> Maria Rosa Müller, Maurício Sampaio e Renata Armel. </p>
+                <p> Travel & Memories &reg;</p>
+                <p> Todos os direitos reservados</p>
+            </div>
+            <div>
+                <p><em> Rua das Laranjeiras, 1520. Centro. São Paulo/SP </em></p>
+                <p><em>(11) 99999-8888.</em></p>
+                <p><em>travelandmemories@gmail.com</em></p>
+            </div>
+            <div class=" image-footer">
+                <a href="https://github.com/ReArmel" target="_blank"><img
+                        src="https://pngimg.com/uploads/github/github_PNG80.png" alt="github"></a>
+                        <a href="https://www.linkedin.com/in/renata-carmi-armel-042ba3206/" target="_blank"><img
+                            src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"
+                            alt="linkedin"></a>
+                        <a href="https://github.com/mau-sampaio" target="_blank"><img
+                        src="https://pngimg.com/uploads/github/github_PNG80.png" alt="github"></a>
+                        <a href="https://www.linkedin.com/in/mauricio-sampaio/" target="_blank"><img
+                            src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"
+                            alt="linkedin"></a>                      
+                        <a href="https://github.com/Marro-Muller" target="_blank"><img
+                        src="https://pngimg.com/uploads/github/github_PNG80.png" alt="github"></a>
+                        <a href="https://www.linkedin.com/in/mariarosamuller/" target="_blank"><img
+                            src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"
+                            alt="linkedin"></a>
+
+            </div>
+        </footer>
+    </main>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Novo Local</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="preImagem">
+                        <img src="no-image.png" class="img-thumbnail" alt="">
+                    </div>
+                    <form id="criarCard" class="d-flex flex-column gap-3">
+                        <div class="input-group has-validation">
+                            <input type="text" class="form-control" placeholder="URL da imagem" name="urlImagem"
+                                required>
+                            <div class="invalid-feedback">
+                                URL inválida
+                            </div>
+                        </div>
+
+                        <div class="input-group has-validation">
+                            <input type="text" class="form-control" placeholder="Nome do Local" name="nomeLocal"
+                                required>
+                            <div class="invalid-feedback">
+                                Mínimo de 4 caracteres
+                            </div>
+                        </div>
+
+                        <div class="input-group has-validation">
+                            <input type="date" class="form-control" placeholder="Data" name="data" required>
+                            <div class="invalid-feedback">
+                                Obrigatório
+                            </div>
+                        </div>
+
+                        <div class="input-group has-validation">
+                            <textarea type="text" maxlength="150" class="form-control"
+                                placeholder="Escreva o que essa foto te lembra..." name="descricao" required></textarea>
+                            <div class="invalid-feedback">
+                                Mínimo de 4 caracteres
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" form="criarCard" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="criarCard" class="btn btn-primary salvar">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
